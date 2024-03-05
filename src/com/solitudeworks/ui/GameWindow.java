@@ -1,8 +1,5 @@
 package com.solitudeworks.ui;
 
-import com.solitudeworks.Tests;
-import com.solitudeworks.game.Dino;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -25,7 +22,8 @@ public class GameWindow extends JFrame {
         setContentPane(panel);
 
         setLayout(null);
-        setUndecorated(false);
+        setUndecorated(false); // or true
         setVisible(true);
+
     }
 }
