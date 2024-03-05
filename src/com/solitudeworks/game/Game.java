@@ -1,15 +1,18 @@
 package com.solitudeworks.game;
 
-public class Game {
+public class Game implements Updatable {
 
     private boolean running = true;
+    private final Dino dino = new Dino();
+    private Cactus cactus = new Cactus();
 
-    public boolean isRunning(){
+    public boolean isRunning() {
         return running;
     }
 
-    public void update(){
-        System.out.println("Att...");
+    @Override
+    public void update() {
+        dino.update();
+        cactus.update();
     }
-
 }
